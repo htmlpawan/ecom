@@ -1,0 +1,10 @@
+
+<div>{{item}}</div>
+
+<select name="cars" id="cars" [(ngModel)]="getVal" (change)="ppc()">
+    <option value="red" selected>Red</option>
+    <option value="yellow">yellow</option>
+    <option value="green">green</option>
+    <option value="pink">pink</option>
+</select>
+<div>{{getVal}}</div>

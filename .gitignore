@@ -1,0 +1,5 @@
+.qodo
+.angular
+node_modules
+dist/
+.angular/

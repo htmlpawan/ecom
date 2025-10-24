@@ -1,0 +1,113 @@
+.main_top{
+    margin-top: 80px;
+}
+.filter-tope-group{
+    button{
+        width: 100%;
+        text-align: left;
+    }
+}
+.hov1:hover{
+    border: none;
+}
+.hov1{
+    border: none;
+}
+.stext-104{
+    cursor: pointer;
+}
+.block2-txt-child2.flex-r.p-t-3 {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------
+[ Transition ]*/
+.trans-01 {
+	-webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.trans-02 {
+	-webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.trans-03 {
+	-webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.trans-04 {
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.trans-05 {
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.trans-06 {
+	-webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.trans-07 {
+	-webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+.trans-08 {
+	-webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.trans-09 {
+	-webkit-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    transition: all 0.9s;
+}
+.trans-10 {
+	-webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+#mg-multisidetabs .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#mg-multisidetabs .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#mg-multisidetabs .list-group{
+  margin-bottom:0;
+}
+.slide-container{
+  overflow:hidden;
+}
+#mg-multisidetabs .list-sub{
+  display:none;
+}
+#mg-multisidetabs .panel{
+  margin-bottom:0;
+}
+#mg-multisidetabs .panel-body{
+  padding:1px 2px;
+}
+.mg-icon{
+  font-size:10px;
+  line-height: 20px;
+}
