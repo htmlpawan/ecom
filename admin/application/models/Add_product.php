@@ -63,9 +63,25 @@ public function update_product($data, $editid, $images)
 //------------------------------product list Model --------------------------
 	public function select_product()
 	{      
-		$query = $this->db->query("SELECT `add_product`.`id`, `add_product`.`title`, `product_imgs`.`image`, `category`.`title` as `category`,`add_product`.`price`, `add_product`.`quantity` FROM `add_product`, `category`, `product_imgs` WHERE `add_product`.`categoryId`=`category`.`id` and `add_product`.`id`=`product_imgs`.`product_id`");
+			$query = $this->db->query("SELECT 
+										p.id,
+										p.title,
+										p.categoryId,
+										p.price,
+										p.quantity,
+										p.colorName,
+										p.description,
+										p.insert_time,
+										GROUP_CONCAT(i.image) AS images
+									FROM add_product AS p
+									LEFT JOIN product_imgs AS i
+										ON p.id = i.product_id
+									GROUP BY p.id
+									ORDER BY p.id DESC;
+									");
 			return $query->result_array();
 	}
+
 	public function select_photo($id){
 	   $this->db->where('product_id', $id);
 	  $query = $this->db->get('product_imgs');

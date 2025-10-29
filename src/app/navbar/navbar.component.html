@@ -48,9 +48,9 @@
 						<li routerLinkActive="active-menu">
 							<a routerLink="/products">Products</a>
 							<ul class="sub-menu">
-								<li><a href="index.html">Category 1</a></li>
-								<li><a href="home-02.html">Category 2</a></li>
-								<li><a href="home-03.html">Category 3</a></li>
+								<li><a routerLink="/products">Category 1</a></li>
+								<li><a routerLink="/products">Category 2</a></li>
+								<li><a routerLink="/products">Category 3</a></li>
 							</ul>
 						</li>
 
@@ -123,9 +123,9 @@
 			<li (click)="toggleSubMenu()">
 				<a routerLink="/products">Products</a>
 				<ul class="sub-menu-m" [ngStyle]="{'display': isSubMenu? 'block':''}">
-					<li><a href="index.html">Products 1</a></li>
-					<li><a href="home-02.html">Products 2</a></li>
-					<li><a href="home-03.html">Products 3</a></li>
+					<li><a routerLink="/products">Products 1</a></li>
+					<li><a routerLink="/products">Products 2</a></li>
+					<li><a routerLink="/products">Products 3</a></li>
 				</ul>
 				<span class="arrow-main-menu-m" [ngClass]="{'turn-arrow-main-menu-m':isSubMenu}">
 					<i class="fa fa-angle-right" aria-hidden="true"></i>
